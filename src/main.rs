@@ -1,4 +1,8 @@
+mod cli;
+mod tasks;
+
+use structopt::StructOpt;
 
 fn main() {
-    println!("Hello, world!");
+    println!("{:#?}", cli::CLArgs::from_args());
 }
